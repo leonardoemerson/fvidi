@@ -1,3 +1,3 @@
 requests==2.25.1
 streamlit==1.11.0
--e https://github.com/leonardoemerson/modified-vizkg.git#egg=vizkg
+git+https://github.com/leonardoemerson/modified-vizkg.git#egg=vizkg
