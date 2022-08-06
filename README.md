@@ -1,7 +1,7 @@
 # FVIDI
 
-Este repositório contém uma ferramenta de visualização interativa de dados interligados (FVIDI) desenvolvida por Leonardo Emerson.
-A pasta *consultas* contém as Queries usadas para experimentação da ferramenta.
+Este repositório contém uma ferramenta de visualização interativa de dados interligados (FVIDI) desenvolvida por Leonardo Emerson.<br>
+A pasta *consultas* contém as Queries usadas para experimentação da ferramenta.<br>
 A pasta *visualizations* contém as visualizações geradas pela ferramenta na etapa de experimentação.   
 
 ## Consultas usadas para experimentação da ferramenta
