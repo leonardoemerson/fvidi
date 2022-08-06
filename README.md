@@ -18,7 +18,7 @@ SELECT DISTINCT ?vaccineLabel ?originCountry  {
 }LIMIT 25
 ```
 
-- Visualização 1 - Sunburst
+<center>Visualização 1 - Sunburst</center>
 ![alt text](https://github.com/leonardoemerson/fvidi/blob/main/visualizations/Visualização%201.png?raw=true)
 
 - Consulta 2 - Casos, recuperações e óbitos de Covid 19
