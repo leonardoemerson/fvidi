@@ -1,0 +1,26 @@
+SELECT ?tempo ?Recuperacoes ?Casos ?Obitos WHERE {
+  {
+    SELECT ?tempo ?Recuperacoes WHERE {
+      wd:Q84263196 p:P8010 ?countRes .
+      FILTER NOT EXISTS { ?countRes pq:P276 ?loc }
+      ?countRes ps:P8010 ?Recuperacoes ;
+                   pq:P585 ?tempo .
+    }
+  } 
+{
+    SELECT ?tempo ?Casos WHERE {
+      wd:Q84263196 p:P1603 ?countRes .
+      FILTER NOT EXISTS { ?countRes pq:P276 ?loc }
+       ?countRes ps:P1603 ?Casos ;
+                   pq:P585 ?tempo .
+    }
+  } 
+  {
+    SELECT ?tempo ?Obitos WHERE {
+      wd:Q84263196 p:P1120 ?countRes .
+      FILTER NOT EXISTS { ?countRes pq:P276 ?loc }
+       ?countRes ps:P1120 ?Obitos ;
+                   pq:P585 ?tempo .
+    }
+  }
+}
