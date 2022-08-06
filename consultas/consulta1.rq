@@ -1,0 +1,9 @@
+SELECT DISTINCT ?vaccineLabel ?originCountry  {
+  ?vaccine wdt:P1924 wd:Q84263196 .
+  ?vaccine wdt:P178 ?developer.
+  ?vaccine rdfs:label ?vaccineLabel .
+  ?developer wdt:P17 ?origin . 
+  ?origin rdfs:label ?originCountry .
+  FILTER (LANG(?vaccineLabel) = 'en').
+  FILTER (LANG(?originCountry) = 'en').
+}LIMIT 25
