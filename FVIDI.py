@@ -1,9 +1,15 @@
 import streamlit as st
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 import VizKG.visualize as vkg
 import tkinter as tk
 from requests import utils
 DEFAULT_USER_AGENT = 'My Agent'
 utils.default_user_agent = lambda: DEFAULT_USER_AGENT
+from PyQt5 import QtCore, QtGui, QtWidgets
+import matplotlib
+matplotlib.use("TkAgg")
+from matplotlib import pyplot
 
 st.subheader("Ferramenta de visualização interativa de dados interligados")
 st.text("Digite as informações necessárias")
