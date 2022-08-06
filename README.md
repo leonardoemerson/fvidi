@@ -18,6 +18,9 @@ SELECT DISTINCT ?vaccineLabel ?originCountry  {
 }LIMIT 25
 ```
 
+- Visualização 1 - Sunburst
+![alt text](https://github.com/leonardoemerson/fvidi/blob/main/visualizations/Visualização%201.png?raw=true)
+
 - Consulta 2 - Casos, recuperações e óbitos de Covid 19
 
 ```sparql
@@ -49,6 +52,12 @@ SELECT ?tempo ?Recuperacoes ?Casos ?Obitos WHERE {
 }
 ```
 
+- Visualização 2.1 - Heatmap
+![alt text](https://github.com/leonardoemerson/fvidi/blob/main/visualizations/Visualização%202.1.png?raw=true)
+
+- Visualização 2.2 - StackedAreChart
+![alt text](https://github.com/leonardoemerson/fvidi/blob/main/visualizations/Visualização%202.2.png?raw=true)
+
 - Consulta 3 - Número de Casos de Covid 19 por data
 
 ```sparql
@@ -59,6 +68,8 @@ SELECT ?data ?numeroDeCasos WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,en". }
 } ORDER BY ASC(?data)
 ```
+- Visualização 3 - LineChart
+![alt text](https://github.com/leonardoemerson/fvidi/blob/main/visualizations/Visualização%203.png?raw=true)
 
 - Consulta 4 - Profissão das pessoas que faleceram de Covid 19
 ```sparql
@@ -71,6 +82,8 @@ GROUP BY ?occupation ?occupationLabel
 ORDER BY DESC(?count)
 LIMIT 30
 ```
+- Visualização 4 - BubbleChart
+![alt text](https://github.com/leonardoemerson/fvidi/blob/main/visualizations/Visualização%204.png?raw=true)
 
 - Consulta 5 - Distribuição de idade de famosos que faleceram de Covid 19
 
@@ -88,3 +101,6 @@ SELECT ?age (COUNT(?person) AS ?count) WHERE {
 } GROUP BY ?age
 
 ```
+
+- Visualização 5 - Histogram
+![alt text](https://github.com/leonardoemerson/fvidi/blob/main/visualizations/Visualização%205.png?raw=true)
