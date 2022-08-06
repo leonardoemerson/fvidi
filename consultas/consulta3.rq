@@ -1,0 +1,6 @@
+SELECT ?data ?numeroDeCasos WHERE {
+  wd:Q81068910 p:P1603 ?numeroDeCasosStat .
+  ?numeroDeCasosStat ps:P1603 ?numeroDeCasos ;
+                     pq:P585 ?data .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,en". }
+} ORDER BY ASC(?data)
