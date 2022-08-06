@@ -1,0 +1,8 @@
+SELECT ?occupation ?occupationLabel (COUNT(*) as ?count) WHERE {
+  ?person wdt:P509 wd:Q84263196 ; wdt:P31 wd:Q5 .
+  ?person wdt:P106 ?occupation .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" } .
+} 
+GROUP BY ?occupation ?occupationLabel
+ORDER BY DESC(?count)
+LIMIT 30
