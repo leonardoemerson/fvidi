@@ -2,7 +2,9 @@
 
 Este repositório contém uma ferramenta de visualização interativa de dados interligados (FVIDI) desenvolvida por Leonardo Emerson.<br>
 A pasta *consultas* contém as Queries usadas para experimentação da ferramenta.<br>
-A pasta *visualizations* contém as visualizações geradas pela ferramenta na etapa de experimentação.   
+A pasta *visualizations* contém as visualizações geradas pela ferramenta na etapa de experimentação.<br>
+Para executar a ferramenta localmente, acesse a pasta ou diretório onde se localiza o arquivo "FVIDI.py" e execute o comando: streamlit run "FVIDI.py".<br>
+OBS.: É necessário ter as bibliotecas e dependências do projeto previamente instaladas para a correta execução da ferramenta.
 
 ## Consultas usadas para experimentação da ferramenta
 
